@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import CreateCardling from './pages/CreateCardling';
+import CardlingView from './pages/CardlingView';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Define route configuration
+export const routes = [
+    { path: '/', element: Home },
+    { path: '/create', element: CreateCardling },
+    // { path: '/view/:encodedData', element: CardlingView }
+];
+
+const App: React.FC = () => {
+    return (
+        <Router basename={process.env.PUBLIC_URL}>
+            <Routes>
+                {routes.map((route) => (
+                    <Route 
+                        key={route.path} 
+                        path={route.path} 
+                        element={<route.element />} 
+                    />
+                ))}
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;
