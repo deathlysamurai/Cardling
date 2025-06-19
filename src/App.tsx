@@ -13,7 +13,8 @@ export const routes = [
 
 const App: React.FC = () => {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        // <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/Cardling">
             <Routes>
                 {routes.map((route) => (
                     <Route 

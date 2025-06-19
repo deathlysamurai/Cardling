@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Canvas } from 'fabric';
 import CardlingPreview from '../components/CreateCardling/CardlingPreview';
-import QRCodeGenerator from '../components/CreateCardling/QRCodeGenerator';
 import CardlingToolbar from '../components/CreateCardling/CardlingToolbar';
 import StateManager from '../classes/StateManager';
 import { useNavigate } from 'react-router-dom';
-import { QRCodeSVG } from 'qrcode.react';
 import LZString from 'lz-string';
 
 const CreateCardling: React.FC = () => {
