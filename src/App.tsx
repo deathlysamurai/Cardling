@@ -9,12 +9,13 @@ export const routes = [
     { path: '/', element: Home },
     { path: '/create', element: CreateCardling },
     // { path: '/view/:encodedData', element: CardlingView }
+    { path: '*', element: Home }
 ];
 
 const App: React.FC = () => {
     return (
-        // <Router basename={process.env.PUBLIC_URL}>
-        <Router basename="/">
+        <Router basename={process.env.PUBLIC_URL}>
+        {/* <Router basename="/Cardling"> */}
             <Routes>
                 {routes.map((route) => (
                     <Route 
