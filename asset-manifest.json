@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Cardling/static/css/main.81e14884.css",
-    "main.js": "/Cardling/static/js/main.57b05895.js",
+    "main.js": "/Cardling/static/js/main.5a53695e.js",
     "static/js/453.f796658d.chunk.js": "/Cardling/static/js/453.f796658d.chunk.js",
     "index.html": "/Cardling/index.html",
     "main.81e14884.css.map": "/Cardling/static/css/main.81e14884.css.map",
-    "main.57b05895.js.map": "/Cardling/static/js/main.57b05895.js.map",
+    "main.5a53695e.js.map": "/Cardling/static/js/main.5a53695e.js.map",
     "453.f796658d.chunk.js.map": "/Cardling/static/js/453.f796658d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81e14884.css",
-    "static/js/main.57b05895.js"
+    "static/js/main.5a53695e.js"
   ]
 }
